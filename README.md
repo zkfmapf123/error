@@ -9,7 +9,7 @@
 ```sudo apt-get install openjdk-80jdk```  
 
 - 환경변수 지정  
-```sudo nano /etc/profile```
+```sudo nano /etc/profile```  
 ```export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64```  
 ```export PATH=$JAVA_HOME/bin:$PATH```  
 ```export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH```  
