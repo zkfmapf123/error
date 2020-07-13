@@ -12,7 +12,21 @@
 ```sudo nano /etc/profile```  
 ```export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64```  
 ```export PATH=$JAVA_HOME/bin:$PATH```  
-```export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH```  
+```export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH``` 
+
+- 환경변수 지정 (위에 것 안될 시)
+근본적으로 이게 안되는 이유는 java의 환경변수가 지정이 안돼서 java virtual machine이 활성화가 안돼는듯..
+1. javac의 위치를 확인한다
+``` readlink -f /usr/bin/javac ``` 
+--> javac의 실제위치는 /usr/lib/jvm/java-8-openjdk-amd64/ 로 지정한다.
+
+2. vi ~/.bashrc
+```
+export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
+export PATH="$PATH:$JAVA_HOME/bin”
+```
+3. source ~/.bashrc
+4. echo $JAVA_HOME 
   
 ![image](./public/image1.png)  
 ```[패키지명]/android/app/src/main/assets 폴더가 있는지 확인하고 없으면 생성```  
