@@ -6,7 +6,7 @@
 
 해당 에러는 java를 설치하고 환경변수를 지정해주면 된다.  
 ```sudo apt-get install openjdk-8-jre```  
-```sudo apt-get install openjdk-80jdk```  
+```sudo apt-get install openjdk-8-jdk```  
 
 - 환경변수 지정  
 ```sudo nano /etc/profile```  
