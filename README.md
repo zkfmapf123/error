@@ -14,6 +14,7 @@
 ```export PATH=$JAVA_HOME/bin:$PATH```  
 ```export CLASS_PATH=$JAVA_HOME/lib:$CLASS_PATH``` 
 
+
 - 환경변수 지정 (위에 것 안될 시)
 근본적으로 이게 안되는 이유는 java의 환경변수가 지정이 안돼서 java virtual machine이 활성화가 안돼는듯..
 1. javac의 위치를 확인한다
@@ -24,6 +25,7 @@
 ```
 export JAVA_HOME=/usr/lib/jvm/java-8-openjdk-amd64
 export PATH="$PATH:$JAVA_HOME/bin”
+export ANDROID_SDK_ROOT="나의 sdk루트"
 ```
 3. source ~/.bashrc
 4. echo $JAVA_HOME 
